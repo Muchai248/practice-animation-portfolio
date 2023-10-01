@@ -70,12 +70,13 @@ function rotateImage(event) {
   var containerRect = container.getBoundingClientRect();
   var x = event.clientX - containerRect.left - containerRect.width / 2;
   var y = event.clientY - containerRect.top - containerRect.height / 2;
-  var rotationX = -y / containerRect.height * 20; // Adjust the factor as needed
-  var rotationY = x / containerRect.width * 20; // Adjust the factor as needed
+  var rotationX = -y / containerRect.height * 360; // Adjust the factor as needed
+  var rotationY = x / containerRect.width * 360; // Adjust the factor as needed
 
   // Apply the rotation transform to the image with perspective
   image.style.transform = `perspective(800px) rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
 }
+
 
 // Add a mousemove event listener to the container
 container.addEventListener('mousemove', rotateImage);
