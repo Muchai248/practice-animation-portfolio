@@ -96,7 +96,7 @@ function rotateImage1(event) {
   var rotationY = x / containerRect.width * 360; // Adjust the factor as needed
 
   // Apply the rotation transform to the new image with perspective
-  image1.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+  image1.style.transform = `perspective(800px) rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
 }
 
 // // Reset the new image's rotation when the mouse leaves its container

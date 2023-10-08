@@ -133,8 +133,8 @@ a:focus {
   margin: auto;
   justify-content: space-around;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
-  black 5px 10px 15px
+  box-shadow:#000000 0px 5px 15px,
+  #000000 5px 10px 15px
 
 }
 
