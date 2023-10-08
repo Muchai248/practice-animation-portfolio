@@ -80,3 +80,29 @@ function rotateImage(event) {
 
 // Add a mousemove event listener to the container
 container.addEventListener('mousemove', rotateImage);
+
+
+// Get a reference to the new image element and its container
+var image1 = document.getElementById('rotate-img1');
+var container1 = document.getElementById('img1');
+
+// Function to update the new image's perspective-based rotation
+function rotateImage1(event) {
+  // Calculate the rotation angles based on the mouse position
+  var containerRect = container1.getBoundingClientRect();
+  var x = event.clientX - containerRect.left - containerRect.width / 2;
+  var y = event.clientY - containerRect.top - containerRect.height / 2;
+  var rotationX = -y / containerRect.height * 360; // Adjust the factor as needed
+  var rotationY = x / containerRect.width * 360; // Adjust the factor as needed
+
+  // Apply the rotation transform to the new image with perspective
+  image1.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+}
+
+// // Reset the new image's rotation when the mouse leaves its container
+// container1.addEventListener('mouseleave', function () {
+//   image1.style.transform = 'rotateX(0deg) rotateY(0deg)';
+// });
+
+// Add a mousemove event listener to the new container
+container1.addEventListener('mousemove', rotateImage1);
