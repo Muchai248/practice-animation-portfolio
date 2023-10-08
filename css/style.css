@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 body {
   font-family: "Poppins", sans-serif;
-  color: #ecae05;
-  background-color: #030303;
+  color: #f1cd04;
+  background-color: #fbf8f8;
   overflow-x: hidden;
 }
 
@@ -50,10 +50,12 @@ body {
 .heading_container h2 {
   position: relative;
   font-weight: bold;
+  color: #000000;
+  
 }
 
-.heading_container h2 span {
-  color: #f8e807;
+.heading_container p {
+  color: black;
 }
 
 .heading_container.heading_center {
@@ -122,11 +124,16 @@ a:focus {
 
 .custom_nav-container .navbar-nav {
   margin: auto;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+  black 5px 10px 15px
+
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 5px 25px;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
@@ -135,8 +142,9 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #000000;
-  background-color: #ffffff;
+  color: #000;;
+  ;
+
 }
 
 .custom_nav-container .navbar-toggler {
@@ -170,7 +178,7 @@ a:focus {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #000000;
   top: -10px;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
@@ -241,22 +249,21 @@ a:focus {
 }
 
 .quote_btn-container a:hover {
-  color: #f8842b;
+  color: #ffffff;
 }
 
 .quote_btn-container .quote_btn {
   display: inline-block;
   padding: 5px 25px;
-  background-color: #f8842b;
-  color: #ffffff;
+  color: black;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #f8842b;
+  border: 1px solid grey;
 }
 
 .quote_btn-container .quote_btn:hover {
-  color: #ffffff;
+  color: #000000;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }
@@ -476,8 +483,8 @@ a:focus {
 }
 
 .about_section {
-  background-color: #7335b7;
-  color: #ffffff;
+  background-color: #f1cd04;
+  color: black;
   border-radius: 250px 0 250px 0;
 }
 
