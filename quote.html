@@ -30,7 +30,7 @@
 
 <body>
 
-  <div class="hero_area">
+  <div class="hero_area" id="header1">
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
@@ -74,8 +74,13 @@
       </div>
     </header>
   <body>
- <div class="range">
-  <input type="range" min="0" max="5">
+</div>
+<!-- end hero area -->
+<div class="card" id="text1"> 
+<h1>Get An Instant Quote</h1>
+ <div class="range" id="ranger1">
+ <h4>Number of custom characters </h4>
+  <input type="range" min="0" max="5" step="1">
   <div class="ticks">
     <!-- You could generate the ticks based on your min, max & step values. -->
     <span class="tick">0</span>
@@ -84,45 +89,49 @@
     <span class="tick">3</span>
     <span class="tick">4</span>
     <span class="tick">5</span>
-  </div>
-</div>
     </div>
+     <h4>Number of characters from our library </h4>
+  <input type="range" min="0" max="5" step="1">
+  <div class="ticks">
+    <!-- You could generate the ticks based on your min, max & step values. -->
+    <span class="tick">0</span>
+    <span class="tick">1</span>
+    <span class="tick">2</span>
+    <span class="tick">3</span>
+    <span class="tick">4</span>
+    <span class="tick">5</span>
+    </div>
+     <h4>Length Of Animation in (Seconds) </h4>
+  <input type="range" min="0" max="180" step="10" id="animation-length">
+  <div class="ticks" id="animation-ticks">
+    <!-- You could generate the ticks based on your min, max & step values. -->
+    <span class="tick">0</span>
+    <span class="tick">10</span>
+    <span class="tick">20</span>
+    <span class="tick">30</span>
+    <span class="tick">40</span>
+    <span class="tick">50</span>
+    <span class="tick">60</span>
+    <span class="tick">70</span>
+    <span class="tick">80</span>
+    <span class="tick">90</span>
+    <span class="tick">100</span>
+    <span class="tick">110</span>
+    <span class="tick">120</span>
+    <span class="tick">130</span>
+    <span class="tick">140</span>
+    <span class="tick">150</span>
+    <span class="tick">160</span>
+    <span class="tick">170</span>
+    <span class="tick">180</span>
+    </div>
+  </div>
+  </div>
     <script src="script.js"></script>
-    <div class="footer_container">
+    <div class="footer_container" id="footer1">
     <section class="info_section ">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-3 ">
-            <div class="info_detail">
-              <h4>
-                Waxxes
-              </h4>
-              <p>
-                Waxxes is an award-winning, full-service production company specializing in video animation and design.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-2 mx-auto">
-            <div class="info_link_box">
-              <h4>
-                Links
-              </h4>
-              <div class="info_links">
-                <a class="" href="index.html">
-                  Home
-                </a>
-                <a class="" href="about.html">
-                  About
-                </a>
-                <a class="" href="service.html">
-                  Services
-                </a>
-                <a class="" href="contact.html">
-                  Contact Us
-                </a>
-              </div>
-            </div>
-          </div>
           <div class="col-md-6 col-lg-3 ">
             <h4>
               Subscribe
@@ -178,6 +187,19 @@
         </div>
       </div>
     </section>
+    
+    <!-- footer section -->
+    <footer class="footer_section">
+      <div class="container">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          Waxxes Animation Studio
+        </p>
+      </div>
+    </footer>
+    <!-- footer section -->
+  </div>
+
     </div>
   </body>
 </html> 
