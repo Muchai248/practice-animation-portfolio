@@ -4,6 +4,7 @@
   }
 }
 
+
 @media (max-width: 1120px) {}
 
 @media (max-width: 992px) {
@@ -13,6 +14,43 @@
 
   .quote_btn-container {
     display: none;
+  }
+  .quote_btn-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .quote_btn-container a {
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .quote_btn-container a span {
+    margin-left: 5px;
+  }
+  
+  .quote_btn-container a:hover {
+    color: #d6be0a;
+  }
+  
+  .quote_btn-container .quote_btn {
+    display: inline-block;
+    padding: 5px 25px;
+    color: #ffffff;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 1px solid grey;
+  }
+  
+  .quote_btn-container .quote_btn:hover {
+    color: #d6be0a;
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
   }
 
   .custom_nav-container .navbar-nav {
