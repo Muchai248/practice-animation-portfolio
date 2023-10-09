@@ -702,18 +702,19 @@ a:focus {
   font-family: "Poppins", sans-serif;
   display: inline-block;
   padding: 10px 65px;
-  background-color: #7335b7;
+  background-color: #000000;
   color: #ffffff;
   border-radius: 3px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #7335b7;
-  color: #fff;
+  border: 1px solid grey;
+  cursor: pointer;
   margin-top: 10px;
 }
 
 .contact_section button:hover {
-  color: #ffffff;
+  color: #d6be0a;
+  background-color: #000000;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }
@@ -942,6 +943,9 @@ subscribe  */
   color: #000000;
 }
 
+#color h2{
+  color: #ffffff;
+}
 
 /* Style the range input */
 .range input[type=range] {
