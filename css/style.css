@@ -388,19 +388,19 @@ a:focus {
   transform: rotateX(90deg) translateZ(calc(var(--size) * -.5));
 }
 .left {
-  background-color: #ccc;
+  background-color: #a2d704;
   transform: rotateY(90deg) translateZ(calc(var(--size) * .5));
 }
 .right {
-  background-color: #ddd;
+  background-color: #cbef00;
   transform: rotateY(90deg) translateZ(calc(var(--size) * -.5));
 }
 .front {
-  background-color: #aaa;
+  background-color: #e6cc09;
   transform: translateZ(calc(var(--size) * .5));
 }
 .back {
-  background-color: #bbb;
+  background-color: #d01010;
   transform: translateZ(calc(var(--size) * -.5));
 }
 
