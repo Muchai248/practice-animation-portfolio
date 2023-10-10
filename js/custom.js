@@ -64,3 +64,7 @@ function rotateImage1(event) {
 // Add a mousemove event listener to the new container
 container1.addEventListener('mousemove', rotateImage1);
 
+
+window.addEventListener('scroll', () => {
+  document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+}, false);
