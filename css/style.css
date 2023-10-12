@@ -996,7 +996,7 @@ subscribe  */
   background: #d6be0a; /* Adjust the transparency as needed */
   border-radius: 15px;
   padding: 20px;
-  width: 1346px;
+  width: 1111px;
   margin: 0 auto;
   box-shadow: 0 4px 6px grey;
 }
@@ -1035,7 +1035,7 @@ subscribe  */
 .range .ticks {
   display: flex;
   justify-content: space-between;
-  width: 1359px;
+  width: 1123px;
   padding: 20px;
   flex: 1;
 }
@@ -1056,7 +1056,6 @@ subscribe  */
   height: 5px; /* Height of the tick mark */
   background: #d6be0a;
 }
-
 
 #ranger1{
   width:45% !important ;
