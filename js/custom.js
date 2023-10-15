@@ -68,3 +68,23 @@ container1.addEventListener('mousemove', rotateImage1);
 window.addEventListener('scroll', () => {
   document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
 }, false);
+
+
+document.getElementById("kip1").addEventListener("click",handleKip)
+// document.getElementById("kip2").addEventListener("click",handleKip)
+// document.getElementById("njug1").addEventListener("click",handleNjug)
+// document.getElementById("njug2").addEventListener("click",handleNjug1)
+
+// function handleKip(){
+//   const targetElement = document.querySelector('kip1');
+//   targetElement.scrollIntoView({ behavior: 'smooth' });
+// }
+
+// function hanldeKip(){
+//   const targetElement = document.querySelector('h4');
+//   targetElement.scrollIntoView({ behavior: 'smooth' });
+// }
+// function hanldeNjug(){
+//   const targetElement = document.querySelector('h3');
+//   targetElement.scrollIntoView({ behavior: 'smooth' });
+// }

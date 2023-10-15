@@ -1113,11 +1113,53 @@ subscribe  */
   margin-bottom: 20px;
 }
 
-.article{
- 
- 
+.kip1{
   margin: auto;
-
-
+  padding: 10px;
 }
-
+.kip2{
+  margin: auto;
+  padding: 10px;
+}
+.kip3{
+  margin: auto;
+  position: relative;
+  padding: 10px;
+}
+.kip4{
+  margin: auto;
+  position: relative;
+  padding: 10px;
+}
+.kip5{
+  margin: auto;
+  position: relative;
+  padding: 10px;
+}
+.kip6{
+  margin: auto;
+  position: relative;
+  padding: 10px;
+}
+.njugush1{
+  margin: auto;
+}
+.njugush2{
+  margin: auto;
+}
+.njugush3{
+  margin: auto;
+}
+.njugush4{
+  margin: auto;
+  position: relative;
+  padding: 10px;;
+}
+.njugush5{
+  margin: auto;
+  position: relative;
+}
+.njugush6{
+  margin: auto;
+  position: relative;
+}
