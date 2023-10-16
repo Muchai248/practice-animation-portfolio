@@ -1171,12 +1171,3 @@ canvas {
   position:relative;
   left: -311px;
 }
-.ball-text {
-  position: relative;
-  z-index: 2;
-  color: white;
-  font-size: 5rem;
-  right: 20%;
-  bottom: 40%;
-  transform: translate(-20%, -40%);
-}
