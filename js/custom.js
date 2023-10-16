@@ -70,21 +70,36 @@ window.addEventListener('scroll', () => {
 }, false);
 
 
-document.getElementById("kip1").addEventListener("click",handleKip)
-// document.getElementById("kip2").addEventListener("click",handleKip)
-// document.getElementById("njug1").addEventListener("click",handleNjug)
-// document.getElementById("njug2").addEventListener("click",handleNjug1)
+const canvas = document.querySelector(".canvas");
+const context = canvas.getContext("2d");
+const frameCount = 130;
+const images = [];
 
-// function handleKip(){
-//   const targetElement = document.querySelector('kip1');
-//   targetElement.scrollIntoView({ behavior: 'smooth' });
-// }
+// Preload all images
+for (let i = 1; i <= frameCount; i++) {
+    const img = new Image();
+    img.src = `./slides/${i.toString().padStart(4, '0')}.png`;
+    images.push(img);
+}
 
-// function hanldeKip(){
-//   const targetElement = document.querySelector('h4');
-//   targetElement.scrollIntoView({ behavior: 'smooth' });
-// }
-// function hanldeNjug(){
-//   const targetElement = document.querySelector('h3');
-//   targetElement.scrollIntoView({ behavior: 'smooth' });
-// }
+const body = { frame: 0 };
+
+gsap.to(body, {
+    frame: frameCount - 1,
+    snap: "frame",
+    ease: "none",
+    scrollTrigger: {
+        scrub: 0.5,
+        pin: ".canvas",
+        start:"1%",
+        end: "100%",
+    },
+    onUpdate: render,
+});
+
+function render() {
+    context.canvas.width = images[0].width;
+    context.canvas.height = images[0].height;
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.drawImage(images[Math.floor(body.frame)], 0, 0);
+}
