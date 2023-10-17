@@ -1165,9 +1165,9 @@ subscribe  */
 }
 
 
-canvas {
+.canvas {
   width: 40vw;
   height: 50vh;
   position:relative;
-  left: -311px;
+  left:-265px;
 }
