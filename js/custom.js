@@ -89,31 +89,43 @@ window.addEventListener('scroll', () => {
 //   targetElement.scrollIntoView({ behavior: 'smooth' });
 // }
 
+
 const canvas = document.querySelector(".canvas");
 const context = canvas.getContext("2d");
 const frameCount = 130;
 const images = [];
+let imageLoadCount = 0; // Track the number of loaded images
+const body = { frame: 0 };
+// Function to handle image loading
+function onImageLoad() {
+    imageLoadCount++;
+
+    // Check if all images are loaded
+    if (imageLoadCount === frameCount) {
+        // All images are loaded, now you can start rendering
+       
+
+        gsap.to(body, {
+            frame: frameCount - 1,
+            snap: "frame",
+            ease: "none",
+            scrollTrigger: {
+                scrub: 1,
+                pin: ".canvas",
+                end: "100%",
+            },
+            onUpdate: render,
+        });
+    }
+}
 
 // Preload all images
 for (let i = 1; i <= frameCount; i++) {
     const img = new Image();
+    img.onload = onImageLoad; // Set the load event handler
     img.src = `./slides/${i.toString().padStart(4, '0')}.png`;
     images.push(img);
 }
-
-const body = { frame: 0 };
-
-gsap.to(body, {
-    frame: frameCount - 1,
-    snap: "frame",
-    ease: "none",
-    scrollTrigger: {
-        scrub: 1,
-        pin: ".canvas",
-        end: "100%",
-    },
-    onUpdate: render,
-});
 
 function render() {
     context.canvas.width = images[0].width;
