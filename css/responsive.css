@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 body {
   font-family: "Poppins", sans-serif;
@@ -1177,7 +1177,7 @@ subscribe  */
 }
 
 
-@media only screen and (min-width: 600px) {
+@media  (min-width: 600px) {
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 body {
   font-family: "Poppins", sans-serif;
@@ -2355,7 +2355,7 @@ subscribe  */
 
 }
 
-@media only screen and  (min-width: 768px) {
+@media (min-width: 768px) {
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 body {
   font-family: "Poppins", sans-serif;
@@ -3533,7 +3533,7 @@ subscribe  */
 
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
   body {
     font-family: "Poppins", sans-serif;
@@ -4711,7 +4711,7 @@ subscribe  */
   
 }
 
-@media only screen and (min-width: 1200px) {
+@media  (min-width: 1200px) {
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 body {
   font-family: "Poppins", sans-serif;
