@@ -102,7 +102,7 @@ a:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #000000;
-  border-radius: 0 5 350px 0;
+  border-radius: 0 0 350px 0;
 }
 
 .sub_page .hero_area {
@@ -117,9 +117,6 @@ a:focus {
 .header_section .container-fluid {
   padding-right: 25px;
   padding-left: 25px;
-  margin: auto;
-  height: 600px;
-  
 }
 
 .navbar-brand span {
