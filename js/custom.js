@@ -9,13 +9,13 @@ getYear();
 
 /** google_map js **/
 
-// function myMap() {
-//     var mapProp = {
-//         center: new google.maps.LatLng(40.712775, -74.005973),
-//         zoom: 18,
-//     };
-//     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-// }
+ function myMap() {
+     var mapProp = {
+         center: new google.maps.LatLng(40.712775, -74.005973),
+         zoom: 18,
+     };
+   var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+ }
 
 // // Get references to the image element and the container
 // const image = document.getElementById('rotate-image');
@@ -110,9 +110,9 @@ function onImageLoad() {
             snap: "frame",
             ease: "none",
             scrollTrigger: {
-                scrub: 1,
+                scrub: 10,
                 pin: ".canvas",
-                end: "100%",
+                end: "1 00%",
             },
             onUpdate: render,
         });
