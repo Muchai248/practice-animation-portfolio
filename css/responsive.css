@@ -12,6 +12,78 @@
     height: auto;
   }
 
+  .card {
+    background: #d6be0a; /* Adjust the transparency as needed */
+    border-radius: 15px;
+    padding: 20px;
+    width: 1111px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px grey;
+  }
+  
+  #text1 h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size:3vw ;
+    color: #000000;
+  }
+  
+  #color h2{
+    color: #ffffff;
+  }
+  
+  
+  /* Style the range input */
+  .range input[type=range] {
+    width: 226%;
+    height: 10px;
+    margin-top: 10px; /* Adjust as needed */
+    border-radius: 5px;
+    color:#d6be0a;
+    cursor:pointer;
+  }
+  
+  .range input[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    width: 9px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color: #d6be0a;
+  }
+  
+  .range .ticks {
+    display: flex;
+    justify-content: space-between;
+    width: 1123px;
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .range .tick {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    color: #000000;
+  }
+  
+  .range .tick::before {
+    content: "";
+    position: absolute;
+    top: 15px; /* Adjust the distance of the text from the tick */
+    left: 10px;
+    width: 2px;
+    height: 5px; /* Height of the tick mark */
+    background: #d6be0a;
+  }
+  
+  #ranger1{
+    width:45% !important ;
+    font-size: inherit!important;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
   .quote_btn-container {
     display: none;
   }
