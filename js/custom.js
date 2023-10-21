@@ -110,9 +110,9 @@ function onImageLoad() {
             snap: "frame",
             ease: "none",
             scrollTrigger: {
-                scrub: 10,
+                scrub: 1,
                 pin: ".canvas",
-                end: "1 00%",
+                end: "100%",
             },
             onUpdate: render,
         });
