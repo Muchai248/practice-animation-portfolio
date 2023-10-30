@@ -699,7 +699,8 @@ a:focus {
 }
 
 .client_section .box .img-box img {
-  width: 100%;
+  width: 1500%;
+  height: 200px;
   border-radius: 100%;
 }
 
@@ -717,8 +718,9 @@ a:focus {
   text-transform: uppercase;
 }
 
-.client_section .box .client_info i {
-  font-size: 24px;
+.client_section .box .client_info {
+  width: 560px;
+  height: 315px;
 }
 
 .client_section .box p {
@@ -727,7 +729,6 @@ a:focus {
 
 .client_section .box .detail-box {
   background-color: #ffffff;
-  background-color: #7335b7;
   color: #ffffff;
   border-radius: 15px;
   padding: 85px 45px 15px 45px;
@@ -745,7 +746,7 @@ a:focus {
 }
 
 .client_section .carousel-indicators li {
-  background-color: #7335b7;
+  background-color: #000000;
   width: 10px;
   height: 10px;
   border-radius: 100%;
@@ -755,7 +756,7 @@ a:focus {
 .client_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #f8842b;
+  background-color: #000000;
 }
 
 .contact_section {
@@ -1168,7 +1169,22 @@ subscribe  */
 .canvas {
   width: 100%;
   height: 100%;
-  
-  
-  
 }
+
+#c1{
+  width:560px; 
+  height:315px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+  }
