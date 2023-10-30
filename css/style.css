@@ -695,7 +695,6 @@ a:focus {
   height: 125px;
   min-width: 125px;
   position: relative;
-  margin-bottom: -62.5px;
 }
 
 .client_section .box .img-box img {
@@ -728,7 +727,6 @@ a:focus {
 }
 
 .client_section .box .detail-box {
-  background-color: #ffffff;
   color: #ffffff;
   border-radius: 15px;
   padding: 85px 45px 15px 45px;
@@ -1017,7 +1015,7 @@ subscribe  */
 #header1{
   width: 100%;
   min-height:auto;
-  border-radius: 0 0 45px 0;
+  border-radius: 0 0 45px 0;  
 }
 
 #header2{
@@ -1032,7 +1030,7 @@ subscribe  */
   border-radius: 350px 0 0 0;
   position: relative;
   bottom: -753px;
-  padding-top: 56px;
+  padding-top: 145px;
 }
 #footer2{
   background-color: #000000;
@@ -1040,12 +1038,14 @@ subscribe  */
   border-radius: 350px 0 0 0;
   position: relative;
   bottom: -753px;
-  padding-top: 56px;
+  padding-top: 145px;
 }
 .card {
   background: #d6be0a; /* Adjust the transparency as needed */
   border-radius: 15px;
   padding: 20px;
+  position: relative;
+  bottom: -126px;
   width: 1111px;
   margin: 0 auto;
   box-shadow: 0 4px 6px grey;
@@ -1144,12 +1144,17 @@ subscribe  */
 }
 .njugush1{
   margin: auto;
+  padding: 10px;
 }
 .njugush2{
   margin: auto;
+  position: relative;
+  padding: 10px;
 }
 .njugush3{
   margin: auto;
+  position: relative;
+  padding: 10px;
 }
 .njugush4{
   margin: auto;
@@ -1159,10 +1164,12 @@ subscribe  */
 .njugush5{
   margin: auto;
   position: relative;
+  padding: 10px;
 }
 .njugush6{
   margin: auto;
   position: relative;
+  padding: 10px;
 }
 
 

@@ -11,7 +11,7 @@ getYear();
 
  function myMap() {
      var mapProp = {
-         center: new google.maps.LatLng(40.712775, -74.005973),
+         center: new google.maps.LatLng(-1.2921, 36.8219),
          zoom: 18,
      };
    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
@@ -44,30 +44,30 @@ var image1 = document.getElementById('rotate-img1');
 var container1 = document.getElementById('img1');
 
 // Function to update the new image's perspective-based rotation
-function rotateImage1(event) {
-  // Calculate the rotation angles based on the mouse position
-  const containerRect = container1.getBoundingClientRect();
-  const x = event.clientX - containerRect.left - containerRect.width / 2;
-  const y = event.clientY - containerRect.top - containerRect.height / 2;
-  const rotationX = -y / containerRect.height * 360; // Adjust the factor as needed
-  const rotationY = x / containerRect.width * 360; // Adjust the factor as needed
+// function rotateImage1(event) {
+//   // Calculate the rotation angles based on the mouse position
+//   const containerRect = container1.getBoundingClientRect();
+//   const x = event.clientX - containerRect.left - containerRect.width / 2;
+//   const y = event.clientY - containerRect.top - containerRect.height / 2;
+//   const rotationX = -y / containerRect.height * 360; // Adjust the factor as needed
+//   const rotationY = x / containerRect.width * 360; // Adjust the factor as needed
 
-  // Apply the rotation transform to the new image with perspective
-  image1.style.transform = `perspective(800px) rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
-}
+//   // Apply the rotation transform to the new image with perspective
+//   image1.style.transform = `perspective(800px) rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+// }
 
-// // Reset the new image's rotation when the mouse leaves its container
-// container1.addEventListener('mouseleave', function () {
-//   image1.style.transform = 'rotateX(0deg) rotateY(0deg)';
-// });
+// // // Reset the new image's rotation when the mouse leaves its container
+// // container1.addEventListener('mouseleave', function () {
+// //   image1.style.transform = 'rotateX(0deg) rotateY(0deg)';
+// // });
 
-// Add a mousemove event listener to the new container
-container1.addEventListener('mousemove', rotateImage1);
+// // Add a mousemove event listener to the new container
+// container1.addEventListener('mousemove', rotateImage1);
 
 
-window.addEventListener('scroll', () => {
-  document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-}, false);
+// window.addEventListener('scroll', () => {
+//   document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+// }, false);
 
 
 // document.getElementById("kip1").addEventListener("click",handleKip)
